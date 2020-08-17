@@ -171,6 +171,7 @@ section h3 {
     section .rowStyle {
         margin-right: 0px;
         margin-left: 0px;
+        position: relative;
     }
     
     section .rowStyle form {
@@ -207,10 +208,6 @@ section h3 {
 
     section .homeImg {
         padding: 23px 39px 53px 40px;
-    }
-
-    section .rowStyle {
-        position: relative;
     }
 
     section .homeBtn {
