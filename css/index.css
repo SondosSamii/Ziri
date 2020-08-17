@@ -12,6 +12,10 @@ body {
 }
 
 .wave {
+    width: 100vw;
+    /* height: 1080px; */
+    height: 100%;
+    overflow: hidden;
     position: absolute;
     top:0;
     right: 0;
@@ -82,7 +86,7 @@ body {
 /* End Navbar Style */
 
 hr {
-    width: 1755.3px;
+    width: 92%;
     height: 0;
     opacity: 0.2;
     border: solid 1px #707070;
@@ -134,13 +138,18 @@ section h3 {
 
 /* End Section Style */
 
-/* Start Media Query for small screen */
+/* Start Media Query for Mobile Screen */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     body {
         overflow-x: hidden;
         text-align: center;
     }
+
+    .wave {
+        height: 112%;
+    }
+
     .navbar {
         height: 70px;
         padding: 18px 28px 5px 21px;
@@ -155,6 +164,32 @@ section h3 {
 
     .navbar-light .navbar-toggler {
         border: 0;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+        background-color: #fff;
+        z-index: 3;
+        text-align: left;
+    }
+
+    .nav-link {
+        height: 40px;
+        font-size: 20px;
+        line-height: 1.23;
+        padding: 15px 14px !important;
+    }
+
+    .navbar .form-control {
+        width: 70%;
+        height: 47px;
+        padding: 18px 23px 18px 40px;
+        margin: 10px 0px;
+    }
+
+    .navbar .form-control,
+    .navbar .form-inline button {
+        font-size: 20px;
     }
     
     section {
@@ -212,9 +247,189 @@ section h3 {
 
     section .homeBtn {
         position: absolute;
-        top: 100%;
+        top: 105%;
     }
 
 }
 
-/* End Media Query for small screen */
+/* End Media Query for Mobile Screen */
+
+/* Start Media Query for Tablet Screen */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        /* overflow-x: hidden; */
+    }
+    
+    .navbar {
+        height: 70px;
+        padding: 18px 28px 5px 21px;
+    }
+
+    .navbar-brand {
+      width: 50px;
+      height: 49px;
+      font-size: 40px;
+      line-height: 1.23;
+      padding: 0px 20px;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 0;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+        background-color: #fff;
+        z-index: 3;
+        text-align: left;
+    }
+
+    .nav-link {
+        height: 40px;
+        font-size: 20px;
+        line-height: 1.23;
+        padding: 15px 14px !important;
+    }
+
+    .navbar .form-control {
+        width: 70%;
+        height: 47px;
+        padding: 18px 23px 18px 40px;
+        margin: 10px 0px;
+    }
+
+    .navbar .form-control,
+    .navbar .form-inline button {
+        font-size: 20px;
+    }
+    
+    section {
+        padding: 20px 70px 0px 70px;
+    }
+
+    section h1 {
+        height: 60px;
+        font-size: 24px;
+    }
+    
+    section .rowStyle form {
+        width: 50%;
+        margin-top: 0px;
+    }
+
+    section .form-control {
+        height: 50px;
+        padding: 14px 20px;
+        font-size: 10px;
+    }
+
+    section button {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    section h2 {
+        height: 48px;
+        font-size: 28px;
+        margin: -30px -30px 0px 0px
+    }
+
+    section .secCol {
+        width: 50%;
+    }
+
+    section h3 {
+        height: 48px;
+        font-size: 24px;
+    }
+
+    section .homeImg {
+        padding: 0px 20px 0px 20px;
+    }
+
+}
+
+/* End Media Query for Tablet Screen */
+
+/* Start Media Query for Laptop Screen */
+
+@media only screen and (min-width: 992px) and (max-width: 1750px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        height: 60px;
+        padding: 15px 70px;
+    }
+
+    .navbar-brand {
+      width: 70px;
+      height: 50px;
+      font-size: 40px;
+    }
+
+    .nav-link {
+        height: 50px;
+        font-size: 18px;
+        line-height: 1.23;
+    }
+
+    .navbar .form-control {
+        width: 250px;
+        height: 50px;
+    }
+
+    .navbar .form-control,
+    .navbar .form-inline button {
+        font-size: 14px;
+    }
+    
+    section {
+        padding: 20px 70px 0px 70px;
+    }
+
+    section h1 {
+        height: 70px;
+        font-size: 36px;
+    }
+    
+    section .rowStyle form {
+        width: 50%;
+        margin-top: 24px;
+    }
+
+    section .form-control {
+        height: 50px;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    section button {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    section h2 {
+        height: 40px;
+        font-size: 38px;
+        margin-right: -30px;
+    }
+
+    section h3 {
+        height: 40px;
+        font-size: 34px;
+    }
+
+    section .secCol {
+        width: 50%;
+    }
+
+    section .homeImg {
+        padding: 0px 39px 0px 40px;
+    }
+
+}
+
+/* End Media Query for Laptop Screen */
