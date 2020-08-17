@@ -59,8 +59,9 @@
                 Looking for a home?<br />
                 You are in the right place.
             </h1>
+
             <div class="d-flex justify-content-between">
-                <div class="d-flex flex-column" style="width: 770px; margin-top: 84px;">
+                <div class="row justify-content-between rowStyle w-100">
                     <form>
                         <div class="form-group">
                             <input type="text" class="form-control" id="inputName" placeholder="What is your name?">
@@ -92,24 +93,27 @@
                                 <input type="password" class="form-control" id="inputPassword"
                                     placeholder="Create a password.">
                             </div>
-                            <div class="form-group col-md-6">
-                                <button type="submit" class="w-100 h-100">Find your home!</button>
+                            <div class="form-group col-md-6 homeBtn">
+                                <button type="submit" class="w-100" onclick="location.href= 'thankyou.html';">
+                                    Find your home!</button>
                             </div>
                         </div>
                     </form>
-                </div>
 
-                <div class="d-flex flex-column">
-                    <h2> Choose your style. </h2>
-                    <div class="row justify-content-between">
-                        <div class="col-8">
-                            <img src="images/Barn.png" class="img-fluid" />
-                        </div>
-                        <div class="col-3">
-                            <h3> Ranch </h3>
+                    <div>
+                        <h2> Choose your style. </h2>
+                        <div class="row justify-content-between">
+                            <div class="order-2 col-md-3 imgHead">
+                                <h3> Ranch </h3>
+                            </div>
+                            <div class="order-1 col-md-8">
+                                <img src="images/Barn.png" class="img-fluid homeImg" />
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
         </section>

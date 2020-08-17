@@ -102,7 +102,13 @@ section h1 {
     margin-bottom: 24px;
 }
 
+section .rowStyle form {
+    width: 770px;
+    margin-top: 84px;
+}
+
 section button {
+    height: 72px;
     border-radius: 13px;
     background-image: linear-gradient(to bottom, #eb6282, #fa9090);
     font-size: 25px;
@@ -127,3 +133,91 @@ section h3 {
 }
 
 /* End Section Style */
+
+/* Start Media Query for small screen */
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+        text-align: center;
+    }
+    .navbar {
+        height: 70px;
+        padding: 18px 28px 5px 21px;
+    }
+
+    .navbar-brand {
+      width: 70px;
+      height: 49px;
+      font-size: 40px;
+      line-height: 1.23;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 0;
+    }
+    
+    section {
+        padding: 41px 53px 0px 53px;
+    }
+
+    section h1 {
+        height: 48px;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 53px;
+    }
+
+    section .rowStyle {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    section .rowStyle form {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    section .form-control {
+        height: 47px;
+        padding: 14.5px 20px 13.5px 12px;
+        font-size: 15px;
+        line-height: 1.27;
+    }
+
+    section button {
+        width: 264px;
+        height: 47px;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+
+    section h2,
+    section h3 {
+        height: 24px;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 9px;
+    }
+
+    section .imgHead {
+        order: 1;
+    }
+
+    section .homeImg {
+        padding: 23px 39px 53px 40px;
+    }
+
+    section .rowStyle {
+        position: relative;
+    }
+
+    section .homeBtn {
+        position: absolute;
+        top: 100%;
+    }
+
+}
+
+/* End Media Query for small screen */
