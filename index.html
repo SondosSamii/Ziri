@@ -13,7 +13,106 @@
     </head>
 
     <body>
+        <div class="wave" style="width: 100vw; height: 1080px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#b4f1e1;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffe9c5;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path d="M498.02,-0.48 C237.30,-22.20 318.00,150.48 81.55,161.34 L500.00,150.00 L505.36,-12.33 Z"
+                    style="stroke: none; fill: url(#grad1);"></path>
+            </svg>
+        </div>
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <a class="navbar-brand" href="#">Ziri</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find your home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sell your home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My account</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+        <hr />
+
+        <section>
+            <h1>
+                Looking for a home?<br />
+                You are in the right place.
+            </h1>
+            <div class="d-flex justify-content-between">
+                <div class="d-flex flex-column" style="width: 770px; margin-top: 84px;">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputName" placeholder="What is your name?">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="What is your email?">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <select class="form-control" id="inputBedrooms">
+                                    <option selected disabled>How many bedrooms?</option>
+                                    <option>One</option>
+                                    <option>Two</option>
+                                    <option>Three</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select class="form-control" id="inputBathrooms">
+                                    <option selected disabled>How many bathrooms?</option>
+                                    <option>One</option>
+                                    <option>Two</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="password" class="form-control" id="inputPassword"
+                                    placeholder="Create a password.">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <button type="submit" class="w-100 h-100">Find your home!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <h2> Choose your style. </h2>
+                    <div class="row justify-content-between">
+                        <div class="col-8">
+                            <img src="images/Barn.png" class="img-fluid" />
+                        </div>
+                        <div class="col-3">
+                            <h3> Ranch </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>

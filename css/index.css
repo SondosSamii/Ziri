@@ -1,0 +1,129 @@
+/* Start Global Style */
+
+body {
+    font-family: Montserrat;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: -1;
+}
+
+.form-control {
+    height: 72px;
+    border-radius: 13px;
+    border-color: transparent;
+    background-color: #eaeaea;
+    padding: 26px 20px 22px 40px;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #6e6e6e;
+}
+
+/* End Global Style */
+
+/* Start Navbar Style */
+
+.navbar {
+    height: 126px;
+    padding: 34px 85px 20px 78px;
+}
+
+.navbar.bg-light {
+    background-color: transparent !important;
+}
+
+.navbar-brand {
+    width: 96px;
+    height: 72px;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.22;
+    color: #eb6282 !important;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+.nav-link {
+    height: 67px;
+    font-size: 30px;
+    line-height: 1.23;
+    color: #000000 !important;
+    padding: 15px 14px !important;
+} 
+
+.navbar .form-control {
+    width: 770px;
+    padding: 18px 23px 18px 40px;
+}
+
+.navbar .form-inline button {
+    margin-left: -60px;
+    border: 0px;
+    background-color: transparent;
+}
+
+.navbar .form-control,
+.navbar .form-inline button {
+    font-size: 25px;
+    line-height: 1.2;
+    color: #6e6e6e;
+}
+
+/* End Navbar Style */
+
+hr {
+    width: 1755.3px;
+    height: 0;
+    opacity: 0.2;
+    border: solid 1px #707070;
+    margin-top: 0px;
+}
+
+/* Start Section Style */
+
+section {
+    padding: 79px 61px 0px 77px;
+}
+
+section h1 {
+    height: 172px;
+    font-size: 70px;
+    line-height: 1.23;
+    margin-bottom: 24px;
+}
+
+section button {
+    border-radius: 13px;
+    background-image: linear-gradient(to bottom, #eb6282, #fa9090);
+    font-size: 25px;
+    line-height: 1.2;
+    color: #ffffff;
+    border: 0;
+}
+
+section h2 {
+    height: 92px;
+    font-size: 75px;
+    line-height: 1.23;
+    text-align: right;
+    margin-bottom: 17px;
+}
+
+section h3 {
+    height: 61px;
+    font-size: 50px;
+    line-height: 1.22;
+    text-align: right;
+}
+
+/* End Section Style */
