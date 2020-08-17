@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #b4f1e1 16%, #ffe9c5 88%);
+}
+
+section {
+    padding-top: 252px;
+    padding-left: 78px;
+}
+
+section h1 {
+    height: 201px;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 100px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #eb6282;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding-top: 50%;
+    }
+
+    .navbar-brand {
+        /* padding-top: 441px; */
+        padding-left: 23px;
+    }
+
+    section {
+        padding-top: 116px;
+        padding-left: 39px;
+    }
+    section h1 {
+        height: 72px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
